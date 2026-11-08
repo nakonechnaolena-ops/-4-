@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список справ (REST API)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Список справ</h1>
+    
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Нове завдання..." autocomplete="off">
+      <button type="submit" id="add-btn">Додати</button>
+    </form>
+
+    <p id="error" class="error" hidden></p>
+    <p id="loader" class="loader" hidden>Завантаження...</p>
+    <p id="counter" class="counter"></p>
+
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
